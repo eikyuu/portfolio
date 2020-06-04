@@ -8,6 +8,7 @@ const Home = (props) => {
         <div className="home_block">
           <h1 className="home_block_h1">Développeur Web</h1>
           <h2 className="home_block_h2">HTML &amp; CSS - REACT - SYMFONY</h2>
+          <p>En cours de construction</p>
           <a
             href={pdf}
             download="CV Vincent duguet"
