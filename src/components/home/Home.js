@@ -4,7 +4,7 @@ import pdf from "./vincentduguet.pdf";
 const Home = (props) => {
   const [home] = useState({
     h1: "Développeur Web",
-    h2: "HTML &amp; CSS - REACT - SYMFONY",
+    h2: "HTML & CSS - REACT - SYMFONY",
     p: "en cours de construction",
     a: "TÉLÉCHARGER CV",
   });
