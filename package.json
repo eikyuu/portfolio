@@ -12,6 +12,7 @@
     "popper": "^1.0.1",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",

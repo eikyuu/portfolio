@@ -10,7 +10,7 @@ const Home = (props) => {
   });
   return (
     <>
-      <div className="home">
+      <section id="home" className="home">
         <div className="home_block">
           <h1 className="home_block_h1">{home.h1}</h1>
           <h2 className="home_block_h2">{home.h2}</h2>
@@ -23,7 +23,7 @@ const Home = (props) => {
             {home.a}
           </a>
         </div>
-      </div>
+      </section>
     </>
   );
 };
