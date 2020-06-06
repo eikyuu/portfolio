@@ -18,13 +18,13 @@ const Portfolio = (props) => {
       img: prime,
       title: "Prime",
       text:
-        "Application vitrine et de reservation pour le restaurant prime (Angular, NodeJS)",
+        "Application vitrine et de réservation pour le restaurant prime (Angular, NodeJS)",
     },
     {
       img: avidsen,
       title: "Avidsen",
       text:
-        "Application vitrine (e-commerce) et de presentation de du groupe Avidsen (Symfony, Thelia)",
+        "Application vitrine (e-commerce) et de présentation de du groupe Avidsen (Symfony, Thelia)",
     },
     {
       img: travel,
@@ -42,7 +42,7 @@ const Portfolio = (props) => {
   return (
     <>
       <section id="portfolio" className="portfolio">
-        <h1 className="text-center portfolio_h1 mt-3 mb-3">Réalisations</h1>
+        <h1 className="portfolio_h1 mt-5 mb-5">Réalisations</h1>
         <div className="portfolio_block">
           {portfolio.map((port) => (
             <div className="portfolio_block_img">
