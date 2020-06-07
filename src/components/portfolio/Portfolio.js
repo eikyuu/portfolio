@@ -51,7 +51,7 @@ const Portfolio = (props) => {
         <div className="portfolio_block">
           {portfolio.map((port) => (
             <div key={port.id} className="portfolio_block_img">
-              <img className="portfolio_img mb-3 ml-1" src={port.img} alt="" />
+              <img className="portfolio_img" src={port.img} alt="" />
               <div className="portofolio_text--hover">
                 <div className="text--hover">
                   {port.title} <br /> {port.text}

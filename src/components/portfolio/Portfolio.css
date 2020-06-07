@@ -1,6 +1,6 @@
 .portfolio_img {
   width: 100vw;
-  height: 25rem;
+  height: 20rem;
   padding: 10px;
 }
 .text--hover {
@@ -11,8 +11,7 @@
 
 @media (min-width: 740px) {
   .portfolio_img {
-    width: 100vw;
-    height: 50vh;
+    height: 35rem;
     padding: 10px;
   }
 }
@@ -24,6 +23,8 @@
   }
   .portfolio_block_img {
     margin: 0 auto;
+    height: 25rem;
+    margin-bottom: 50px;
   }
   .portfolio_block_img:hover .portfolio_img {
     opacity: 0.3;
