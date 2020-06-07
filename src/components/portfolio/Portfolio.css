@@ -1,3 +1,19 @@
+.portfolio_h1:before {
+  content: "";
+  left: 0;
+  position: absolute;
+  height: 3px;
+  right: 20%;
+  background-color: #ff6b6b;
+  bottom: -5px;
+}
+
+.portfolio_h1 {
+  display: inline-block;
+  margin: 0px 0px 0px 30px;
+  position: relative;
+}
+
 .portfolio_img {
   width: 100vw;
   height: 20rem;
@@ -23,8 +39,6 @@
   }
   .portfolio_block_img {
     margin: 0 auto;
-    height: 25rem;
-    margin-bottom: 50px;
   }
   .portfolio_block_img:hover .portfolio_img {
     opacity: 0.3;
@@ -47,7 +61,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 75%;
+    bottom: 50%;
   }
 
   .text--hover {

@@ -1,0 +1,15 @@
+.skills_h1:before {
+  content: "";
+  left: 0;
+  position: absolute;
+  height: 3px;
+  right: 20%;
+  background-color: #ff6b6b;
+  bottom: -5px;
+}
+
+.skills_h1 {
+  display: inline-block;
+  margin: 0px 0px 0px 15px;
+  position: relative;
+}
