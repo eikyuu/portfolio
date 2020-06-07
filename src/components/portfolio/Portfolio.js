@@ -47,7 +47,7 @@ const Portfolio = (props) => {
     <>
       <section id="portfolio" className="portfolio">
         <h1 className="portfolio_h1 mt-5 mb-5">Réalisations</h1>
-        <div className="portfolio_block">
+        <div className="portfolio_block mt-3">
           {portfolio.map((port) => (
             <div key={port.id} className="portfolio_block_img">
               <img className="portfolio_img" src={port.img} alt="" />
