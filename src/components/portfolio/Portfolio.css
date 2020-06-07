@@ -47,7 +47,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 50%;
+    bottom: 75%;
   }
 
   .text--hover {
