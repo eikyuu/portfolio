@@ -10,16 +10,17 @@ const Nav = (props) => {
   });
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll());
-  }, [state]);
+    window.removeEventListener("scroll", handleScroll);
+  }, []);
 
+  // Hide or show the menu.
   const handleScroll = () => {
-    const { prevScrollpos } = state;
+    const { prevScrollpos } = this.state;
 
     const currentScrollPos = window.pageYOffset;
     const visible = prevScrollpos > currentScrollPos;
 
-    setState({
+    this.setState({
       prevScrollpos: currentScrollPos,
       visible,
     });
@@ -27,7 +28,7 @@ const Nav = (props) => {
   return (
     <nav
       className={classnames("navbar navbar-expand-lg navbar-dark bg-primary", {
-        "navbar--hidden": !setState.visible,
+        "navbar--hidden": !setState,
       })}
     >
       <AnchorLink className="navbar-brand" href="#home">
