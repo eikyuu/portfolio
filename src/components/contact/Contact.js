@@ -42,7 +42,7 @@ export default class extends React.Component {
 
   render() {
     return (
-      <footer className="contact bg-primary">
+      <footer className="contact bg-primary" id="contact">
         <form className="mailing">
           <div className="container">
             <h1 className="contact_h1 mt-5">PRENDRE CONTACT ?</h1>

@@ -73,6 +73,11 @@ export default class Navbar extends Component {
                   Réalisations
                 </AnchorLink>
               </li>
+              <li className="nav-item active">
+                <AnchorLink className="nav-link" href="#contact">
+                  Contact
+                </AnchorLink>
+              </li>
             </ul>
           </div>
         </nav>
