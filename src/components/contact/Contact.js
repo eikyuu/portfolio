@@ -11,6 +11,7 @@ export default class extends React.Component {
       name: "",
       email: "",
       subject: "",
+      error: "",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -37,7 +38,7 @@ export default class extends React.Component {
         toast.success("Email bien envoyer");
       })
       // Handle errors here however you like, or use a React error boundary
-      .catch(() => toast.error("Erreur dans la distribution de l'email"));
+      .catch((error) => toast.error("Erreur dans la distribution de l'email"));
   }
 
   render() {
@@ -47,9 +48,7 @@ export default class extends React.Component {
           <div className="container">
             <h1 className="contact_h1 mt-5">PRENDRE CONTACT ?</h1>
             <div className="form-group">
-              <label for="name" className="text-white mt-5">
-                Votre Nom
-              </label>
+              <label className="text-white mt-5">Votre Nom</label>
               <input
                 className="form-control"
                 name="name"
@@ -57,13 +56,11 @@ export default class extends React.Component {
                 checked={this.state.name}
                 onChange={this.handleChange}
                 placeholder="Dupont Jean"
-                required
+                required="required"
               />
             </div>
             <div className="form-group">
-              <label for="name" className="text-white">
-                Sujet du message
-              </label>
+              <label className="text-white">Sujet du message</label>
               <input
                 className="form-control"
                 name="subject"
@@ -75,9 +72,7 @@ export default class extends React.Component {
               />
             </div>
             <div className="form-group">
-              <label for="name" className="text-white">
-                Votre email
-              </label>
+              <label className="text-white">Votre email</label>
               <input
                 className="form-control"
                 name="email"
@@ -89,9 +84,7 @@ export default class extends React.Component {
               />
             </div>
             <div className="form-group">
-              <label for="name" className="text-white">
-                Votre message
-              </label>
+              <label className="text-white">Votre message</label>
               <textarea
                 className="form-control"
                 id="mailing"
