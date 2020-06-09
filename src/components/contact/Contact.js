@@ -81,7 +81,7 @@ export default class extends React.Component {
                 type="email"
                 value={this.state.email}
                 onChange={this.handleChange}
-                placeholder="dupont@mail.com."
+                placeholder="jean@mail.com"
                 required
               />
             </div>
