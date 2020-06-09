@@ -30,6 +30,7 @@ export default class extends React.Component {
       email: this.state.email,
       subject: this.state.subject,
     });
+    this.setState({ message: "", name: "", email: "", subject: "" });
   }
 
   sendmessage(templateId, variables) {
@@ -54,7 +55,7 @@ export default class extends React.Component {
                 className="form-control"
                 name="name"
                 type="text"
-                checked={this.state.name}
+                value={this.state.name}
                 onChange={this.handleChange}
                 placeholder="Jean"
                 required
@@ -66,7 +67,7 @@ export default class extends React.Component {
                 className="form-control"
                 name="subject"
                 type="text"
-                checked={this.state.subject}
+                value={this.state.subject}
                 onChange={this.handleChange}
                 placeholder="Sujet de votre message"
                 required
@@ -78,7 +79,7 @@ export default class extends React.Component {
                 className="form-control"
                 name="email"
                 type="email"
-                checked={this.state.email}
+                value={this.state.email}
                 onChange={this.handleChange}
                 placeholder="dupont@mail.com."
                 required
@@ -88,7 +89,6 @@ export default class extends React.Component {
               <label className="text-white">Votre message</label>
               <textarea
                 className="form-control"
-                id="mailing"
                 name="message"
                 onChange={this.handleChange}
                 placeholder="Message..."
