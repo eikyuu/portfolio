@@ -11,7 +11,6 @@ export default class extends React.Component {
       name: "",
       email: "",
       subject: "",
-      error: "",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -21,6 +20,8 @@ export default class extends React.Component {
     this.setState({ [event.target.name]: event.target.value });
   }
   handleSubmit(event) {
+    event.preventDefault();
+
     const templateId = "template_UymVgJzV";
 
     this.sendmessage(templateId, {
@@ -44,7 +45,7 @@ export default class extends React.Component {
   render() {
     return (
       <footer className="contact bg-primary" id="contact">
-        <form className="mailing">
+        <form onSubmit={this.handleSubmit} className="mailing">
           <div className="container">
             <h1 className="contact_h1 mt-5">PRENDRE CONTACT ?</h1>
             <div className="form-group">
@@ -55,8 +56,8 @@ export default class extends React.Component {
                 type="text"
                 checked={this.state.name}
                 onChange={this.handleChange}
-                placeholder="Dupont Jean"
-                required="required"
+                placeholder="Jean"
+                required
               />
             </div>
             <div className="form-group">
@@ -96,12 +97,9 @@ export default class extends React.Component {
               />
             </div>
 
-            <input
-              type="button"
-              value="Envoyer"
-              className="btn btn-secondary"
-              onClick={this.handleSubmit}
-            />
+            <button type="submit" className="btn btn-secondary">
+              Envoyer
+            </button>
           </div>
         </form>
       </footer>
