@@ -7,11 +7,11 @@ import javascriptLogo from "./javascriptLogo.svg";
 import phpLogo from "./phpLogo.svg";
 import symfonyLogo from "./symfony.svg";
 import tsLogo from "./tsLogo.svg";
-import apiLogo from "./apiplatform.png";
-import gitLogo from "./git.png";
+import apiLogo from "./api.svg";
+import gitLogo from "./Git.svg";
 import linuxLogo from "./linux.svg";
 import mysqlLogo from "./mysql.svg";
-import scrumLogo from "./scrum.png";
+import scrumLogo from "./scrum.svg";
 const Skills = (props) => {
   return (
     <>

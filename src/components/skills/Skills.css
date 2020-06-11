@@ -18,3 +18,7 @@
   display: flex;
   justify-content: center;
 }
+
+.skills_div img {
+  height: 100px;
+}
