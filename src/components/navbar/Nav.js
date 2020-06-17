@@ -1,35 +1,27 @@
 import React, { useState, useEffect } from "react";
-import classnames from "classnames";
 import "./Navbar.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Nav = (props) => {
-  const [state, setState] = useState({
-    prevScrollpos: window.pageYOffset,
-    visible: true,
-  });
+  const [scrolling, setScrolling] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
 
   useEffect(() => {
-    window.removeEventListener("scroll", handleScroll);
-  }, []);
+    const onScroll = () => {
+      const currentPosition = window.pageYOffset;
+      currentPosition <= scrollTop ? setScrolling(false) : setScrolling(true);
+      setScrollTop(currentPosition < 0 ? 0 : currentPosition);
+    };
+    window.addEventListener("scroll", onScroll);
+  });
 
-  // Hide or show the menu.
-  const handleScroll = () => {
-    const { prevScrollpos } = this.state;
-
-    const currentScrollPos = window.pageYOffset;
-    const visible = prevScrollpos > currentScrollPos;
-
-    this.setState({
-      prevScrollpos: currentScrollPos,
-      visible,
-    });
-  };
   return (
     <nav
-      className={classnames("navbar navbar-expand-lg navbar-dark bg-primary", {
-        "navbar--hidden": !setState,
-      })}
+      className={
+        scrolling
+          ? "navbar navbar-expand-lg navbar-dark bg-primary navbar--hidden"
+          : "navbar navbar-expand-lg navbar-dark bg-primary"
+      }
     >
       <AnchorLink className="navbar-brand" href="#home">
         Vincent Duguet

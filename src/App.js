@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./components/navbar/Navbar";
+import Nav from "./components/navbar/Nav";
 import Home from "./components/home/Home";
 import Portfolio from "./components/portfolio/Portfolio";
 import Skills from "./components/skills/Skills";
@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Nav />
       <Home />
       <Skills />
       <Portfolio />
