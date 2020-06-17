@@ -6,7 +6,6 @@ import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import About from "./components/about/About";
 
 function App() {
   return (
