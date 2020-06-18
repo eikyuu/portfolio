@@ -3,6 +3,8 @@ import "./Home.css";
 import pdf from "./vincentduguet.pdf";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Home = (props) => {
   const home = {
     h1: "Développeur Web",
@@ -10,10 +12,13 @@ const Home = (props) => {
     p: "en cours de construction",
     a: "TÉLÉCHARGER CV",
   };
+  AOS.init({
+    duration: 2000,
+  });
   return (
     <>
       <section id="home" className="home">
-        <div className="home_block">
+        <div data-aos="fade-right" className="home_block">
           <h1 className="home_block_h1">{home.h1}</h1>
           <h2 className="home_block_h2">{home.h2}</h2>
           <a

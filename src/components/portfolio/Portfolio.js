@@ -5,8 +5,13 @@ import prime from "./prime.jpg";
 import travel from "./travel.jpg";
 import avidsen from "./avidsen.png";
 import crm from "./crm.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Portfolio = (props) => {
+  AOS.init({
+    duration: 2000,
+  });
   const portfolio = [
     {
       id: 1,
@@ -45,7 +50,7 @@ const Portfolio = (props) => {
   ];
   return (
     <>
-      <section id="portfolio" className="portfolio mt-5">
+      <section data-aos="fade-up" id="portfolio" className="portfolio mt-5">
         <h1 className="portfolio_h1 mt-5 mb-5">Réalisations</h1>
         <div className="portfolio_block mt-3">
           {portfolio.map((port) => (

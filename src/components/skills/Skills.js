@@ -12,9 +12,14 @@ import gitLogo from "./Git.svg";
 import linuxLogo from "./linux.svg";
 import mysqlLogo from "./mysql.svg";
 import scrumLogo from "./scrum.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Skills = (props) => {
+  AOS.init({
+    duration: 2000,
+  });
   return (
-    <>
+    <div data-aos="fade-up">
       <h1 className="skills_h1 mt-5 mb-3">Skills</h1>
       <section id="skills" className="skills container">
         <div className="row mt-5 skills_div">
@@ -92,7 +97,7 @@ const Skills = (props) => {
           />
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
