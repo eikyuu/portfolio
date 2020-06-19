@@ -47,8 +47,8 @@ export default class extends React.Component {
     return (
       <footer className="contact bg-primary" id="contact">
         <form onSubmit={this.handleSubmit} className="mailing">
+          <h1 className="contact_h1 mt-5">PRENDRE CONTACT ?</h1>
           <div className="container">
-            <h1 className="contact_h1 mt-5">PRENDRE CONTACT ?</h1>
             <div className="form-group">
               <label className="text-white mt-5">Votre Nom</label>
               <input

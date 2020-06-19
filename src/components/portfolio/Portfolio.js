@@ -1,10 +1,10 @@
 import React from "react";
 import "./Portfolio.css";
-import abc from "./ABC.png";
-import prime from "./prime.jpg";
-import travel from "./travel.jpg";
-import avidsen from "./avidsen.png";
-import crm from "./crm.png";
+import abc from "./files/ABC.png";
+import prime from "./files/prime.jpg";
+import travel from "./files/travel.jpg";
+import avidsen from "./files/avidsen.png";
+import crm from "./files/crm.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -12,6 +12,7 @@ const Portfolio = (props) => {
   AOS.init({
     duration: 2000,
   });
+
   const portfolio = [
     {
       id: 1,
@@ -38,7 +39,7 @@ const Portfolio = (props) => {
       img: travel,
       title: "Av-travel",
       text:
-        "Application de réservation de voyage (Symfony, API Platform, React, Bootswatch)",
+        "Application de réservation de voyage (Symfony, API Platform, React)",
     },
     {
       id: 5,
@@ -48,6 +49,7 @@ const Portfolio = (props) => {
         "Plateforme de gestion de clients et de leurs factures via une API REST (Symfony, API Platform, React, Bootswatch)",
     },
   ];
+
   return (
     <>
       <section id="portfolio" className="portfolio mt-5">
