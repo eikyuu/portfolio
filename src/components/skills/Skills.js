@@ -17,6 +17,7 @@ import "aos/dist/aos.css";
 const Skills = (props) => {
   AOS.init({
     duration: 2000,
+    once: true,
   });
   return (
     <div data-aos="fade-up">

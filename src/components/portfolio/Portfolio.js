@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 const Portfolio = (props) => {
   AOS.init({
     duration: 2000,
+    once: true,
   });
 
   const portfolio = [
