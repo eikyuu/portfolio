@@ -50,12 +50,19 @@ const Portfolio = (props) => {
   ];
   return (
     <>
-      <section data-aos="fade-up" id="portfolio" className="portfolio mt-5">
-        <h1 className="portfolio_h1 mt-5 mb-5">Réalisations</h1>
+      <section id="portfolio" className="portfolio mt-5">
+        <h1 data-aos="fade-up" className="portfolio_h1 mt-5 mb-5">
+          Réalisations
+        </h1>
         <div className="portfolio_block mt-3">
           {portfolio.map((port) => (
             <div key={port.id} className="portfolio_block_img">
-              <img className="portfolio_img" src={port.img} alt="" />
+              <img
+                data-aos="fade-up"
+                className="portfolio_img"
+                src={port.img}
+                alt=""
+              />
               <div className="portofolio_text--hover">
                 <div className="text--hover">
                   {port.title} <br /> {port.text}
