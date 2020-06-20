@@ -34,7 +34,7 @@ const Home = (props) => {
         </a>
         <a href="https://www.linkedin.com/in/vincent-duguet/">
           <img
-            className="ml-1 mr-1 logo_home"
+            className="ml-md-4 mr-md-4 ml-1 mr-1 logo_home"
             src={linkedin}
             alt="linkedin logo"
             title="linkedin"
