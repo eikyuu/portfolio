@@ -20,12 +20,9 @@ const Nav = (props) => {
       className={
         scrolling
           ? "navbar navbar-expand-lg navbar-dark bg-primary navbar--hidden"
-          : "navbar navbar-expand-lg navbar-dark bg-primary"
+          : "navbar stroke navbar-expand-lg navbar-dark bg-primary"
       }
     >
-      <AnchorLink className="navbar-brand" href="#home">
-        Vincent Duguet
-      </AnchorLink>
       <button
         className="navbar-toggler"
         type="button"
@@ -39,6 +36,16 @@ const Nav = (props) => {
       </button>
       <div className="collapse navbar-collapse" id="navbarColor01">
         <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <AnchorLink className="nav-link" href="#home">
+              Accueil
+            </AnchorLink>
+          </li>
+          <li className="nav-item active">
+            <AnchorLink className="nav-link" href="#about">
+              A propos
+            </AnchorLink>
+          </li>
           <li className="nav-item active">
             <AnchorLink className="nav-link" href="#skills">
               Skills

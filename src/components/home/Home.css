@@ -42,3 +42,23 @@
   height: 47px;
   margin-bottom: 4px;
 }
+
+@media (min-width: 740px) {
+  .home_block_h1 {
+    font-size: 70px;
+  }
+
+  .home_block_h2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home_block_h1 {
+    font-size: 90px;
+  }
+
+  .home_block_h2 {
+    font-size: 40px;
+  }
+}
