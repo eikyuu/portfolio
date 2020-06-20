@@ -71,7 +71,17 @@
 @media (min-width: 1200px) {
   .about_p,
   .quote {
-    max-width: 65%;
-    margin: 0 auto;
+    max-width: 50%;
+  }
+  .about_div_img {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: initial;
+  }
+  .about_img {
+    margin-right: 300px;
+  }
+  .quote {
+    margin-left: 180px;
   }
 }
