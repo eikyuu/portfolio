@@ -51,6 +51,10 @@
   margin: 10px 0px 0px 30px;
 }
 
+.quote {
+  margin: 0 auto;
+}
+
 @media (min-width: 740px) {
   .about_p {
     margin-left: 30px;
