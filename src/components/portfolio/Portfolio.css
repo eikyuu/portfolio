@@ -62,6 +62,7 @@
 
   .portfolio_block_img:hover:hover .portofolio_text--hover {
     opacity: 1;
+    cursor: default;
   }
   .portofolio_text--hover {
     transition: 1s ease;
