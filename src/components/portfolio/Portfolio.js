@@ -17,37 +17,37 @@ const Portfolio = (props) => {
   const portfolio = [
     {
       id: 1,
-      img: abc,
-      title: "Reseau ABC",
+      img: travel,
+      title: "Av-travel",
       text:
-        "Application destinée à promouvoir les compétences des professionnels du réseau ABC à travers un système de recommandation des prestations et compétences des membres du réseau et de gestions des événements.(Symfony, Bootstrap)",
+        "Application en cours de développement de réservation de voyage (Symfony, API Platform, React)",
     },
     {
       id: 2,
+      img: crm,
+      title: "Shym",
+      text:
+        "Plateforme de gestion de clients et de leurs factures via une API REST (Symfony, API Platform, React, Bootswatch)",
+    },
+    {
+      id: 3,
       img: prime,
       title: "Prime",
       text:
         "Application vitrine et de réservation pour le restaurant prime (Angular, NodeJS)",
     },
     {
-      id: 3,
+      id: 4,
       img: avidsen,
       title: "Avidsen",
       text: "Application de présentation du groupe Avidsen (Symfony, Thelia)",
     },
     {
-      id: 4,
-      img: travel,
-      title: "Av-travel",
-      text:
-        "Application de réservation de voyage (Symfony, API Platform, React)",
-    },
-    {
       id: 5,
-      img: crm,
-      title: "API-CRM",
+      img: abc,
+      title: "Reseau ABC",
       text:
-        "Plateforme de gestion de clients et de leurs factures via une API REST (Symfony, API Platform, React, Bootswatch)",
+        "Application destinée à promouvoir les compétences des professionnels du réseau ABC à travers un système de recommandation des prestations et compétences des membres du réseau et de gestions des événements.(Symfony, Bootstrap)",
     },
   ];
 
