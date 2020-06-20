@@ -34,7 +34,7 @@ const Home = (props) => {
         </a>
         <a href="https://www.linkedin.com/in/vincent-duguet/">
           <img
-            className="ml-md-4 mr-md-4 ml-1 mr-1 logo_home"
+            className="ml-md-4 mr-md-4 mr-5 mt-5 mt-md-0 logo_home"
             src={linkedin}
             alt="linkedin logo"
             title="linkedin"
@@ -42,7 +42,7 @@ const Home = (props) => {
         </a>
         <a href="https://github.com/eikyuu">
           <img
-            className="logo_home"
+            className="logo_home mt-5 mt-md-0"
             src={github}
             alt="github logo"
             title="github"
