@@ -34,7 +34,12 @@ const Nav = (props) => {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarColor01">
+      <div
+        className="collapse navbar-collapse"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+        id="navbarColor01"
+      >
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
             <AnchorLink className="nav-link" href="#home">
