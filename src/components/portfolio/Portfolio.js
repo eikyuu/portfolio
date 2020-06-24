@@ -70,6 +70,7 @@ const Portfolio = (props) => {
                 style={{ textDecoration: "none" }}
                 title="Code source"
                 target="_blank"
+                rel="noopener noreferrer"
                 href={port.git}
               >
                 <img
