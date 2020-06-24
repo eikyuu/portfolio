@@ -43,7 +43,7 @@ const Portfolio = (props) => {
       id: 4,
       img: avidsen,
       title: "Avidsen",
-      text: "Application de présentation du groupe Avidsen (Symfony, Thelia)",
+      text: "Intégration pour l'application du groupe Avidsen (Symfony)",
       git: "https://github.com/eikyuu/avidsen-files",
     },
     {
