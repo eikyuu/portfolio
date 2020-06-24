@@ -21,6 +21,7 @@ const Portfolio = (props) => {
       title: "Av-travel",
       text:
         "Application en cours de développement de réservation de voyage (Symfony, API Platform, React)",
+      git: "https://github.com/eikyuu/av-travel-react-symfony",
     },
     {
       id: 2,
@@ -28,6 +29,7 @@ const Portfolio = (props) => {
       title: "Shym",
       text:
         "Plateforme de gestion de clients et de leurs factures via une API REST (Symfony, API Platform, React, Bootswatch)",
+      git: "https://github.com/eikyuu/api-course",
     },
     {
       id: 3,
@@ -35,12 +37,14 @@ const Portfolio = (props) => {
       title: "Prime",
       text:
         "Application vitrine et de réservation pour le restaurant prime (Angular, NodeJS)",
+      git: "https://github.com/eikyuu/food-prime-angular",
     },
     {
       id: 4,
       img: avidsen,
       title: "Avidsen",
       text: "Application de présentation du groupe Avidsen (Symfony, Thelia)",
+      git: "https://github.com/eikyuu/avidsen-files",
     },
     {
       id: 5,
@@ -48,6 +52,7 @@ const Portfolio = (props) => {
       title: "Reseau ABC",
       text:
         "Application destinée à promouvoir les compétences des professionnels du réseau ABC à travers un système de recommandation des prestations et compétences des membres du réseau et de gestions des événements.(Symfony, Bootstrap)",
+      git: "https://github.com/eikyuu/Solution-ABC",
     },
   ];
 
@@ -57,20 +62,29 @@ const Portfolio = (props) => {
         <h1 data-aos="fade-up" className="portfolio_h1 mt-5 mb-5">
           Réalisations
         </h1>
+
         <div className="portfolio_block mt-3">
           {portfolio.map((port) => (
             <div key={port.id} className="portfolio_block_img">
-              <img
-                data-aos="fade-up"
-                className="portfolio_img"
-                src={port.img}
-                alt=""
-              />
-              <div className="portofolio_text--hover">
-                <div className="text--hover">
-                  {port.title} <br /> {port.text}
+              <a
+                style={{ textDecoration: "none" }}
+                title="Code source"
+                target="_blank"
+                href={port.git}
+              >
+                <img
+                  data-aos="fade-up"
+                  className="portfolio_img"
+                  src={port.img}
+                  alt=""
+                />
+
+                <div className="portofolio_text--hover">
+                  <div className="text--hover">
+                    {port.title} <br /> {port.text}
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           ))}
         </div>
