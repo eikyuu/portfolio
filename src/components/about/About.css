@@ -35,8 +35,9 @@
 .about_p {
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 1.8em;
+  font-size: 1.2em;
   color: black;
+  line-height: 40px;
 }
 .quote,
 .about_p {
