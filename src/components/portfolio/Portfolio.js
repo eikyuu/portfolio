@@ -2,7 +2,7 @@ import React from "react";
 import "./Portfolio.css";
 import abc from "./files/ABC.png";
 import prime from "./files/prime.jpg";
-import travel from "./files/travel.jpg";
+import travelgif from "./files/travel.gif";
 import avidsen from "./files/avidsen.png";
 import crm from "./files/crm.png";
 import AOS from "aos";
@@ -17,10 +17,10 @@ const Portfolio = (props) => {
   const portfolio = [
     {
       id: 1,
-      img: travel,
+      img: travelgif,
       title: "Av-travel",
       text:
-        "Application en cours de développement de réservation de voyage (Symfony, API Platform, React)",
+        "Application de réservation de voyage (Symfony, API Platform, React)",
       git: "https://github.com/eikyuu/av-travel-react-symfony",
     },
     {
