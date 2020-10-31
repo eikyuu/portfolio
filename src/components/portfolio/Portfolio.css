@@ -1,3 +1,7 @@
+.logo_portfolio {
+  height: 60px;
+}
+
 .portfolio {
   background-color: rgb(245, 245, 245);
 }
@@ -30,6 +34,7 @@
   font-size: 1.2em;
   font-weight: 600;
   padding: 10px;
+  text-align: center;
 }
 
 @media (min-width: 740px) {
@@ -49,7 +54,7 @@
     height: 30rem;
   }
   .portfolio_block_img:hover .portfolio_img {
-    opacity: 0.4;
+    opacity: 0.1;
     transform: translateY(-5px);
   }
 

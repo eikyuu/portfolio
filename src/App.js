@@ -46,8 +46,8 @@ function App() {
 
   return (
     <div className="App">
-      <div class="clickScrollbar"></div>
-      <div class="scrollbar"></div>
+      <div className="clickScrollbar"></div>
+      <div className="scrollbar"></div>
 
       <Nav />
       <Home />
