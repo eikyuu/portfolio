@@ -54,7 +54,6 @@ function App() {
       <About />
       <Skills />
       <Portfolio />
-      <Contact />
       <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
     </div>
   );
