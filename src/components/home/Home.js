@@ -19,6 +19,31 @@ const Home = (props) => {
     once: true,
   });
 
+  const user = [
+    {
+      id: 101,
+      email: "jack@dev.com",
+      personalInfo: {
+        name: "Jackr",
+        address: {
+          line1: "westwish st",
+          line2: "washmasher",
+          city: "wallas",
+          state: "WX",
+        },
+      },
+    },
+  ];
+
+  const getNestedObject = (nestedObj, pathArr) => {
+    return pathArr.reduce(
+      (obj, key) => (obj && obj[key] !== "undefined" ? obj[key] : undefined),
+      nestedObj
+    );
+  };
+  const city = getNestedObject(...user, ["personalInfo", "address", "city"]);
+  console.log(city);
+
   return (
     <section id="home" className="home">
       <div data-aos="fade-right" className="home_block">

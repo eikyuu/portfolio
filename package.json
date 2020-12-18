@@ -12,6 +12,7 @@
     "emailjs-com": "^2.4.1",
     "formik": "^2.1.4",
     "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
     "popper": "^1.0.1",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
