@@ -7,6 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
 
 function App() {
   useEffect(() => {
@@ -53,6 +54,7 @@ function App() {
       <About />
       <Skills />
       <Portfolio />
+      <Contact />
       <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
     </div>
   );
