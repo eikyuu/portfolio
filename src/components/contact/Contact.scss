@@ -1,13 +1,24 @@
 .footer {
   background-color: black;
-  .contain {
-    height: 20rem;
+  li,
+  h1 {
+    color: white;
+  }
+
+  ul {
+    margin-bottom: 0rem !important;
+  }
+  .coll {
     display: flex;
     justify-content: center;
-    padding: 7rem;
+    align-items: center;
+  }
+  .contain {
+    height: 8rem;
+    display: flex;
+    justify-content: center;
     .coll ul {
       list-style: none;
-      margin-right: 5rem;
     }
     .social ul {
       display: flex;
